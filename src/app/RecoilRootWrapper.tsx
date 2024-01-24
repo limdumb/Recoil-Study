@@ -6,7 +6,7 @@ interface RecoilRootWrapperProps {
   children: React.ReactNode;
 }
 
-export default function RecoilRootWrapper({
+export default function RecoilRooÍtWrapper({
   children,
 }: RecoilRootWrapperProps) {
   return <RecoilRoot>{children}</RecoilRoot>;
