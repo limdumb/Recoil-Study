@@ -1,6 +1,6 @@
 import { todoListState } from "@/recoil/atom";
 import { useState, ChangeEvent } from "react";
-import { useSetRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import getId from "../util/getId";
 
 export default function TodoItemCreator() {

@@ -5,4 +5,7 @@ export interface TodoListType {
   isComplete: boolean;
 }
 
-export const todoListState = atom<TodoListType[]>({ key: "", default: [] });
+export const todoListState = atom<TodoListType[]>({
+  key: "todoListState",
+  default: [],
+});

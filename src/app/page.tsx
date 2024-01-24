@@ -11,15 +11,16 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 export default function Home() {
   const todoList = useRecoilValue(todoListState);
-  console.log(todoList);
+
   return (
     <Container>
       <TodoItemCreator />
-      {todoList.map((item) => {
+      {todoList.map((item, i) => {
         return <TodoItem key={item.id} item={item} />;
       })}
     </Container>
